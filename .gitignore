@@ -1,0 +1,29 @@
+# 真实语料与索引产物（含业务数据，不入库）
+data/
+*.npy
+*.pkl
+*.log
+backend.log
+
+# 依赖与虚拟环境
+.venv/
+.venv-1/
+.venv-2/
+venv/
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+
+# 环境与密钥
+.env
+.env.*
+*.key
+*.pem
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.pytest_cache/

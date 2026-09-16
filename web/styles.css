@@ -1,0 +1,36 @@
+/* 移动端优先 */
+.card { background: white; border-radius: 1rem; padding: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+.input { width: 100%; padding: 0.75rem; margin-bottom: 0.75rem; border: 1px solid #e5e7eb; border-radius: 0.75rem; min-height: 44px; font-size: 16px; }
+.btn { background: #2563eb; color: white; padding: 0.75rem 1rem; border-radius: 0.75rem; min-height: 44px; font-size: 16px; width: 100%; }
+.btn-sm { width: auto; padding: 0.5rem 0.75rem; font-size: 14px; }
+.btn-outline { background: white; border: 1px solid #d1d5db; padding: 0.75rem; border-radius: 0.75rem; min-height: 44px; font-size: 15px; }
+.btn-secondary { background: #6b7280; color: white; padding: 0.75rem 1rem; border-radius: 0.75rem; min-height: 44px; font-size: 16px; }
+.nav-btn { display: block; width: 100%; text-align: left; padding: 0.75rem; border-radius: 0.5rem; font-size: 16px; }
+.nav-btn:hover { background: #f3f4f6; }
+.tab { padding: 0.5rem 1rem; border-radius: 9999px; background: #f3f4f6; font-size: 14px; }
+.result-block { background: #f9fafb; border-radius: 0.75rem; padding: 1rem; margin-bottom: 0.75rem; }
+.tag { background: #e0e7ff; color: #3730a3; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; }
+.whitespace-pre-wrap { white-space: pre-wrap; }
+
+/* 底部 Tab 栏 */
+.bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; height: 64px; background: white; border-top: 1px solid #e5e7eb; display: flex; justify-content: space-around; align-items: center; z-index: 50; padding-bottom: env(safe-area-inset-bottom); }
+.bottom-nav button { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; color: #6b7280; font-size: 11px; background: transparent; border: none; }
+.bottom-nav button.active { color: #2563eb; }
+.bottom-nav .icon { font-size: 20px; margin-bottom: 2px; }
+
+/* 主内容区 */
+#main { padding-bottom: calc(64px + 1rem); }
+
+/* 进度条 */
+.progress-wrap { background: #e5e7eb; border-radius: 9999px; height: 8px; overflow: hidden; margin: 0.5rem 0; }
+.progress-bar { background: #2563eb; height: 100%; border-radius: 9999px; transition: width 0.3s; }
+
+/* 骨架屏 */
+.skeleton { background: #e5e7eb; border-radius: 0.5rem; animation: pulse 1.5s infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.5} }
+
+/* 响应式：桌面端恢复侧边栏 */
+@media (min-width: 768px) {
+  .bottom-nav { display: none; }
+  #main { padding-bottom: 1rem; }
+}
